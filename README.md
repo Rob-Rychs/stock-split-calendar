@@ -1,6 +1,12 @@
 # Stock Split Calendar (Python)
 Python interface to www.investing.com/stock-split-calendar/
 
+<p align="center">
+  <img src="ssc.png" width="500"><br/>
+  <i>Stock split calendar for 2017/12/15.</i>
+</p>
+
+This translates to:
 ```
 2017-12-15
 -      C&S Asset Management                      032040                south_korea           1:5
