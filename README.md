@@ -9,6 +9,13 @@ Python interface to www.investing.com/stock-split-calendar/
 
 ## The API
 
+- **```investing.request(date='2017-04-10', debug=True)```**
+  - `date`: query [www.investing.com](www.investing.com) for the day `2017-04-10
+  - `debug`: True (default) will print some information to the console.
+  - `returns`: list of records (name, symbol, country, factor, date)
+
+## Example of output
+
 <p align="center">
   <img src="ssc.png" width="500"><br/>
   <i>Stock split calendar for 2017/12/15.</i>
