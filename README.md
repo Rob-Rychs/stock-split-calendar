@@ -38,6 +38,12 @@ This translates to:
 git clone https://github.com/philipperemy/stock-split-calendar.git
 cd stock-split-calendar
 pip3 install -r requirements.txt
-python3 main.py # will connect to investing.com and start fetching the stock splits.
+python3 main.py # will connect to investing.com and start fetching the stock splits in output.tsv
+```
+
+You can see the progression by opening another terminal and running this command:
+```
+cd stock-split-calendar
+tail -f output.tsv
 ```
 
