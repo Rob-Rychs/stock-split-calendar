@@ -9,7 +9,7 @@ Python interface to www.investing.com/stock-split-calendar/
 
 ## The API
 
-- **```investing.request(date='2017-04-10', debug=True)```**
+- **```investing.get_stock_split_calendar(date='2017-04-10', debug=True)```**
   - `date`: Query for the day `2017-04-10`
   - `debug`: True (default) will print some information to the console.
   - `returns`: List of the stock split records (name, symbol, country, factor, date)
