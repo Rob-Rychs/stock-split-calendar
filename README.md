@@ -3,7 +3,7 @@ Python interface to www.investing.com/stock-split-calendar/
 
 ## Pregenerated file containing stock split from 1982 to 2017/12/20
 
-- [stock-splits-1982-2017_12_20.tsv](https://github.com/philipperemy/stock-split-calendar/blob/master/stock-splits-1982-2017_12_20.tsv)
+- [stock-splits-1982-2017_12_20.tsv](https://github.com/philipperemy/stock-split-calendar/blob/master/stock-splits-1982-2017_12_20.tsv) [and hit the download button on the right]
 - ~59943 records
 - Given for convenience (generate yours by running the script)!
 
