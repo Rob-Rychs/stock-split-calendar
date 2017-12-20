@@ -6,6 +6,7 @@ Python interface to www.investing.com/stock-split-calendar/
   <i>Stock split calendar for 2017/12/15.</i>
 </p>
 
+
 This translates to:
 ```
 2017-12-15
@@ -22,3 +23,17 @@ This translates to:
 -      Indata                                    IDTA                  poland                1:10
 -      Nordic Mining                             NOMIN                 norway                1.004:1
 ```
+
+## Usage
+
+```
+git clone https://github.com/philipperemy/stock-split-calendar.git
+cd stock-split-calendar
+pip3 install -r requirements.txt
+python3 main.py # will connect to investing.com and start fetching the stock splits.
+```
+
+## File containing stock split from 1982 to 2017/12/20 (~59943 records)
+
+- [stock-splits-1982-2017_12_20.tsv](https://github.com/philipperemy/stock-split-calendar/blob/master/stock-splits-1982-2017_12_20.tsv)
+
