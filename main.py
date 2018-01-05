@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from time import sleep
 
-from send import request
+from stock_split_calendar.investing import get_stock_split_calendar
 
 
 def run():
@@ -10,7 +10,7 @@ def run():
         while True:
             cur_str = cur.strftime('%Y-%m-%d')
             print(cur_str)
-            records = request(cur_str)
+            records = get_stock_split_calendar(cur_str)
             for record in records:
                 w.write(str(record))
                 w.write('\n')
