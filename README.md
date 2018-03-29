@@ -46,7 +46,13 @@ git clone https://github.com/philipperemy/stock-split-calendar.git
 cd stock-split-calendar
 pip3 install -r requirements.txt
 pip3 install . # install it as a package!
-python3 main.py # will connect to investing.com and start fetching the stock splits in output.tsv
+
+# will connect to investing.com and start fetching the stock splits between 2018-03-01 and 2018-04-01 in output.tsv
+python3 stock_splits_to_file.py --end_date 2018-04-01 --start_date 2018-03-01 --output_tsv_filename output.tsv
+
+# will connect to investing.com and start fetching the stock splits between now (today) and 2000-01-01 in output.tsv
+python3 stock_splits_to_file.py --end_date now --start_date 2000-01-01 --output_tsv_filename output.tsv
+
 ```
 
 You can see the progression by opening another terminal and running this command:
