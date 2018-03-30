@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-from record import Record
+from stock_split_calendar.record import Record
 
 url = 'https://www.investing.com/stock-split-calendar/Service/getCalendarFilteredData'
 

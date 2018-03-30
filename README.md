@@ -3,16 +3,16 @@ Python interface to www.investing.com/stock-split-calendar/
 
 ## Pregenerated file containing stock split from 1982 to 2017/12/20
 
-- [stock-splits-1982-2017_12_20.tsv](https://github.com/philipperemy/stock-split-calendar/blob/master/stock-splits-1982-2017_12_20.tsv) [Hit the download button on the right]
+- [stock-splits-1982-2017_12_20.tsv](https://github.com/philipperemy/stock-split-calendar/blob/master/stock-splits-1982-2017_12_20.tsv) [Click on the link and hit the download button on the right]
 - ~59943 records
 - Given for convenience (generate yours by running the script)!
 
 ## The API
 
 - **```investing.get_stock_split_calendar(date='2017-04-10', debug=True)```**
-  - `date`: Day of which to execute the query.
-  - `debug`: True (default) will print some information to the console.
-  - `returns`: List of the stock split records (name, symbol, country, factor, date)
+  - `date`: The day on which to execute the query.
+  - `debug`: Print some information to the console (default is True).
+  - `returns`: Returns the list of the stock split records (name, symbol, country, factor, date)
 
 ## Example of output
 
@@ -45,7 +45,14 @@ This translates to:
 git clone https://github.com/philipperemy/stock-split-calendar.git
 cd stock-split-calendar
 pip3 install -r requirements.txt
-python3 main.py # will connect to investing.com and start fetching the stock splits in output.tsv
+pip3 install . # install it as a package!
+
+# will connect to investing.com and start fetching the stock splits between 2018-03-01 and 2018-04-01 in output.tsv
+python3 stock_splits_to_file.py --end_date 2018-04-01 --start_date 2018-03-01 --output_tsv_filename output.tsv
+
+# Same as above, but between now (today) and 2000-01-01.
+python3 stock_splits_to_file.py --end_date now --start_date 2000-01-01 --output_tsv_filename output.tsv
+
 ```
 
 You can see the progression by opening another terminal and running this command:
